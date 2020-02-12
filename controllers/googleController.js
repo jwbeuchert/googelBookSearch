@@ -32,6 +32,6 @@ module.exports = {
         )
       )
       .then(books => res.json(books))
-      .catch(err => res.status(422).json(err));
+      .catch(err => res.status(400).json(err));
   }
 };
